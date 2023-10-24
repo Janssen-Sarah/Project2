@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Sarah Janssen</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Portfolio Sarah Janssen</title>    
     <link rel="shortcut icon" type="image/png" href="img/Logo/Favicon.png">
-</head>
-<body>
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="vendor/owl_carousel/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="vendor/owl_carousel/dist/assets/owl.theme.default.css" rel="stylesheet" type="text/css">
+
+</head>
+
+   <!--nav--> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-lg-top sticky-md-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap" width="30" height="24"></a>
           <button class="navbar-toggler groen" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,8 +52,100 @@
           </div>
         </div>
       </nav>
+<!--nav-->
 
 
+<!--Banner-->
+<div class="container-fluid py-4 mb-4 d-flex justify-content-center hero-img" style="  background-image: url(img/Headerafbeelding.jpg);">
+<h2 class="fw-bolder display-3 m-4 groen">CV</h2>
+</div>
+
+<!--Carousel-->
+<div class="container">
+      <div class="row">
+          <div class="col-md-6">
+
+              <div class="card">
+                  <div class="card-body">
+                      <h4 class="card-title text-lg-center text-md-center text-sm-center center groen">Hard skills</h4>
+                      <div class="owl-carousel owl-theme">
+
+                        <div class="card">
+                          <img src="img/cv/csharp.png" alt="csharp" />
+                          <div class="card-body">
+                            <h5 class="card-title text-center bruin">C#</h5>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <img src="img/cv/css.png" alt="css" />
+                          <div class="card-body">
+                            <h5 class="card-title text-center bruin">CSS</h5>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <img src="img/cv/github-mark.png" alt="github" />
+                          <div class="card-body">
+                            <h5 class="card-title text-center bruin">GitHub</h5>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <img src="img/cv/html.png" alt="html" />
+                          <div class="card-body">
+                            <h5 class="card-title text-center bruin">HTML</h5>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <img src="img/cv/linux.png" alt="linux" />
+                          <div class="card-body">
+                            <h5 class="card-title text-center bruin">Linux</h5>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <img src="img/cv/sql.png" alt="sql" />
+                          <div class="card-body">
+                            <h5 class="card-title text-center bruin">SQL</h5>
+                          </div>
+                        </div>
+
+
+                      </div>
+                      <!-- /carousel -->
+                  </div>
+                  <!-- /cardbody -->
+              </div>
+              <!-- /card -->
+          </div>
+          <!-- /col12 -->
+      </div>
+      <!-- /row -->
+</div>
+<!-- container -->
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+
+          <div class="card">
+              <div class="card-body">
+                  <h4 class="card-title text-lg-center text-md-center text-sm-center center groen">Soft skills</h4>
+              </div>
+              <!-- /cardbody -->
+          </div>
+          <!-- /card -->
+      </div>
+      <!-- /col12 -->
+  </div>
+  <!-- /row -->
+</div>
+<!-- container -->
+
+
+<!--Footer-->
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="ms-2 me-2 mb-md-0 text-muted text-decoration-none lh-1"></a>
@@ -66,6 +164,38 @@
         </ul>
       </footer>
 
-      <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="">
+</script>
+
+<script src="vendor/owl_carousel/dist/owl.carousel.min.js"></script>
+<script>var owl = $('.owl-carousel');
+  owl.owlCarousel({
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:true
+        },
+        1000:{
+            items:3,
+            nav:true
+        }},
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:2000,
+      autoplayHoverPause:true
+  });
+  $('.play').on('click',function(){
+      owl.trigger('play.owl.autoplay',[1000])
+  })
+  $('.stop').on('click',function(){
+      owl.trigger('stop.owl.autoplay')
+  })</script>
+
+      </body>
 </html>
