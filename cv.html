@@ -15,9 +15,9 @@
 </head>
 
    <!--nav--> 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-lg-top sticky-md-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-lg-top sticky-md-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap" width="30" height="24"></a>
+          <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap" height="40"></a>
           <button class="navbar-toggler groen" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,66 +51,78 @@
             </form>
           </div>
         </div>
-      </nav>
+</nav>
 <!--nav-->
 
 
-<!--Banner-->
-<div class="container-fluid py-4 mb-4 d-flex justify-content-center hero-img" style="  background-image: url(img/Headerafbeelding.jpg);">
-<h2 class="fw-bolder display-3 m-4 groen">CV</h2>
-</div>
 
-<!--Carousel-->
 <div class="container">
-      <div class="row">
-          <div class="col-md-6">
+      <div class="row justify-content-center p-4">
 
-              <div class="card">
+<!-- visitekaart -->
+<div class="cardme mt-5">
+  <div class="firstinfo me"><img src="img/home/Homepage_portret.jpg" alt="portret" />
+      <div class="profileinfo">
+          <h1 class="groen">Sarah Janssen</h1>
+          <h3>Developer</h3>
+          <p class="info">Coming soon: meer info over mijn ervaringen!</p>
+      </div>
+  </div>
+</div>
+<!-- einde visitekaart -->
+
+
+<!--Carousel hardskills-->
+          <div class="col-md-6 mt-5">
+
+              <div class="card shadow-lg p-3 bg-white">
                   <div class="card-body">
                       <h4 class="card-title text-lg-center text-md-center text-sm-center center groen">Hard skills</h4>
                       <div class="owl-carousel owl-theme">
 
-                        <div class="card">
-                          <img src="img/cv/csharp.png" alt="csharp" />
+                   
+                        <div class="card shadow-lg p-3 bg-white">
+                          <img class="card-img-top" src="img/cv/csharp.png" alt="csharp" />
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">C#</h5>
                           </div>
                         </div>
 
-                        <div class="card">
-                          <img src="img/cv/css.png" alt="css" />
+                        <div class="card shadow-lg p-3 bg-white">
+                          <img class="card-img-top" src="img/cv/css.png" alt="css" />
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">CSS</h5>
                           </div>
                         </div>
 
-                        <div class="card">
-                          <img src="img/cv/github-mark.png" alt="github" />
+                        <div class="card shadow-lg p-3 bg-white">
+                          <img class="card-img-top" src="img/cv/github-mark.png" alt="github" />
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">GitHub</h5>
                           </div>
                         </div>
 
-                        <div class="card">
-                          <img src="img/cv/html.png" alt="html" />
+                        <div class="card shadow-lg p-3 bg-white">
+                          <img class="card-img-top" src="img/cv/html.png" alt="html" />
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">HTML</h5>
                           </div>
                         </div>
 
-                        <div class="card">
-                          <img src="img/cv/linux.png" alt="linux" />
+                        <div class="card shadow-lg p-3 bg-white">
+                          <img class="card-img-top" src="img/cv/linux.png" alt="linux" />
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">Linux</h5>
                           </div>
                         </div>
 
-                        <div class="card">
-                          <img src="img/cv/sql.png" alt="sql" />
+                        <div class="card shadow-lg p-3 bg-white">
+                          <img class="card-img-top" src="img/cv/sql.png" alt="sql" />
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">SQL</h5>
                           </div>
                         </div>
+
 
 
                       </div>
@@ -120,33 +132,16 @@
               </div>
               <!-- /card -->
           </div>
-          <!-- /col12 -->
-      </div>
-      <!-- /row -->
-</div>
-<!-- container -->
+          <!-- /col -->
 
-<div class="container">
-  <div class="row">
-      <div class="col-md-6">
-
-          <div class="card">
-              <div class="card-body">
-                  <h4 class="card-title text-lg-center text-md-center text-sm-center center groen">Soft skills</h4>
-              </div>
-              <!-- /cardbody -->
-          </div>
-          <!-- /card -->
-      </div>
-      <!-- /col12 -->
   </div>
   <!-- /row -->
-</div>
-<!-- container -->
+</div><!-- container -->
+
 
 
 <!--Footer-->
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="ms-2 me-2 mb-md-0 text-muted text-decoration-none lh-1"></a>
           <span class="text-muted">&copy; 2023 - Sarah Janssen</span>
@@ -162,7 +157,7 @@
             <a class="text-muted" href="https://www.linkedin.com/in/sarah-janssen-27566a266/"  target="_blank"><img class="footer-icon" src="img/contact/LI-In-Bug.png" alt="linkedin" title="linkedin"></a>
           </li>
         </ul>
-      </footer>
+</footer>
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="">
@@ -197,5 +192,5 @@
       owl.trigger('stop.owl.autoplay')
   })</script>
 
-      </body>
+</body>
 </html>

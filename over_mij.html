@@ -9,10 +9,10 @@
     <link rel="shortcut icon" type="image/png" href="img/Logo/Favicon.png">
 </head>
 <body>
-    
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-lg-top sticky-md-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap" width="30" height="24"></a>
+          <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap" height="40"></a>
           <button class="navbar-toggler groen" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,13 +48,111 @@
         </div>
       </nav>
 
-      <!--Banner-->
-<div class="container-fluid py-4 mb-4 d-flex justify-content-center hero-img" style="  background-image: url(img/Headerafbeelding.jpg);">
-  <h2 class="fw-bolder display-3 m-4 groen">Over mij</h2>
+
+<!-- Slider -->
+ <div class="container-fluid ">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item slider active">
+                <img src="img/over_mij/computer.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Computer</h5>
+                    <p>Niet alleen voor mijn opleiding, maar ook in mijn vrije tijd vertoef ik graag achter mijn laptop.</p>
+                </div>
+            </div>
+            <div class="carousel-item slider">
+                <img src="img/over_mij/hondje.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-opacity-50">
+                    <h5>Mijn hondje</h5>
+                    <p>Door mij dagelijks uit te nodigen voor een wandeling, zorgt mijn hondje ervoor dat ik voldoende in beweging blijf.</p>
+                </div>
+            </div>
+            <div class="carousel-item slider">
+                <img src="img/over_mij/minimalisme.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Minimalisme</h5>
+                    <p>Een opgeruimde omgeving zorgt voor rust.</p>
+                </div>
+            </div>
+            <div class="carousel-item slider">
+              <img src="img/over_mij/planten.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Planten</h5>
+                  <p>Dankzij mijn kamerplanten kan ik de natuur in huis halen.</p>
+              </div>
+          </div><div class="carousel-item slider">
+            <img src="img/over_mij/pretpark.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pretparken</h5>
+                <p>In ons gezin staan pretparken op de eerste plaats voor een daguitstap.</p>
+            </div>
+        </div><div class="carousel-item slider">
+          <img src="img/over_mij/tekenen.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Creativiteit</h5>
+              <p>Wanneer ik even een pauze nodig heb, hou ik ervan om creatief bezig te zijn.</p>
+          </div>
+      </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
   </div>
-  
+<!-- Einde slider -->
 
 
+<section class="projects-section bg-light" id="projects">
+  <div class="container-fluid pt-3">
+
+      <!-- Project One Row-->
+      <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+          <div class="col-lg-6"><img class="img-fluid" src="img/over_mij/overmij_plant1.jpg" alt="..."></div>
+          <div class="col-lg-6">
+              <div class="bg-white text-center h-100 project">
+                  <div class="d-flex h-100">
+                      <div class="project-text w-100 my-auto text-center text-lg-left">
+                          <h4 class="groen">Misty</h4>
+                          <p class="mb-0 donkergroen">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Project Two Row-->
+      <div class="row gx-0 justify-content-center">
+          <div class="col-lg-6"><img class="img-fluid" src="img/over_mij/overmij_plant2.jpg" alt="..."></div>
+          <div class="col-lg-6 order-lg-first">
+              <div class="bg-white text-center h-100 project">
+                  <div class="d-flex h-100">
+                      <div class="project-text w-100 my-auto text-center text-lg-right">
+                          <h4 class="groen">Mountains</h4>
+                          <p class="mb-0 donkergroen">Another example of a project with its respective description. These sections work well responsively as well!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- footer -->
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="ms-2 me-2 mb-md-0 text-muted text-decoration-none lh-1"></a>

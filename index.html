@@ -51,66 +51,87 @@
         </div>
       </nav>
 
-<!-- Hero -->
-      <div lc-helper="background" class="container-fluid py-5 mb-4 d-flex justify-content-center hero-img" style="  background-image: url(img/Headerafbeelding.jpg);">
-          <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12 hero-tekst" >
-              <div class="lc-block">
-                  <div editable="rich">
-                      <h2 class="fw-bolder display-3 groen">Go for IT!</h2>
-                  </div>
-              </div>
-              <div class="lc-block col-md-8">
-                  <div editable="rich">
-                      <p class="lead">Mijn naam is Sarah Janssen en ik ben een enthousiaste student Programmeren aan de Thomas More Hogeschool. Ik ben zeer leergierig en hou ervan om mijn vaardigheden en kennis te verbreden. Omdat ik de drang heb om steeds op zoek te gaan naar nieuwe uitdagingen, is IT een perfecte manier om hier aan mijn noden te voldoen. Tijdens maar ook na mijn studie zal ik steeds bereid zijn om nieuwe uitdagingen aan te gaan en mijn kennis te blijven uitbreiden.  
-                      </p>
-                      
-                  </div>
-              </div>
-              <div class="lc-block">
-                  <a class="btn btn-stijl" href="contact.html" role="button">Contacteer mij!</a>
-              </div>
-          </div>
-      </div>
 
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-4 col-sm-6 ">  
-            <div class="card my-2">
-              <img src="img/home/Homepage1.jpg" class="card-img-top img-fluid" alt="over_mij">
-              <div class="card-body">
-                <p class="card-text">  Ook naast het programmeren heb ik nog andere interesses zoals het creatief bezig zijn en de liefde voor mijn gezin, hondje en kamerplanten. Ik kan genieten van een lange wandeling in de natuur en daar bovenop haal ik ook graag de natuur in huis doormiddel van planten in mijn interieur. 
-                  Ik ben een echte creatieveling en combineer deze vaardigheid graag met programmeren om zo mooie en unieke projecten te creëren.</p>
-                  <a href="over_mij.html" class="btn btn-stijl">Lees meer over mij</a>
+<!-- hero -->
+      <div class="position-relative overflow-hidden mb-4">
+        <div class="d-flex min-vh-100">
+          <video style="z-index:1;object-fit: cover; object-position: 50% 50%;" class="position-absolute w-100 min-vh-100 " autoplay="" preload="" muted="" loop="" playsinline="">
+            <!-- adjust object-position to tweak cropping on mobile -->
+            <source src="videos/herovideo.mp4" type="video/mp4">
+          </video>
+          <div style="z-index:2" class="align-self-center text-center text-light col-md-8 offset-md-2">
+            <div class="lc-block mb-4">
+              <div>
+                <h1 class="display-1 fw-bolder">Go for IT!</h1>
               </div>
             </div>
-          </div>
-
-            <div class="col-md-4 col-sm-6 ">  
-              <div class="card my-2">
-                <img src="img/home/Homepage2.jpg" class="card-img-top img-fluid" alt="projecten">
-                <div class="card-body">
-                  <p class="card-text">Op deze website vind je een overzicht van de projecten die ik reeds realiseerde. Elk project is een uitdaging en ervaring waar ik met veel enthousiasme aan werkte. Ook vind ik het belangrijk om mijn werk steeds op te bouwen met veel zorgvuldigheid en oog voor detail. Tijdens mijn studie leerde ik al om te voldoen aan de wensen van de klant. Zo probeer ik rekening te houden met zowel het technische aspect als de gebruikerservaring. </p>
-                  <a href="projecten.html" class="btn btn-stijl">Bekijk mijn projecten</a>
-                </div>
+      
+            <div class="lc-block m-3">
+              <div>
+                <p class="lead">Mijn naam is Sarah Janssen en ik ben een enthousiaste student Programmeren aan de Thomas More Hogeschool. Ik ben zeer leergierig en hou ervan om mijn vaardigheden en kennis te verbreden. Omdat ik de drang heb om steeds op zoek te gaan naar nieuwe uitdagingen, is IT een perfecte manier om hier aan mijn noden te voldoen. Tijdens maar ook na mijn studie zal ik steeds bereid zijn om nieuwe uitdagingen aan te gaan en mijn kennis te blijven uitbreiden. </p>
+      
               </div>
             </div>
-
-              <div class="col-md-4 col-sm-6 ">  
-                <div class="card my-2">
-                  <img src="img/home/Homepage3.jpg" class="card-img-top img-fluid" alt="cv">
-                  <div class="card-body">
-                    <p class="card-text">Hier komt nog een tekst over mijn werkervaring.</p>
-                    <a href="cv.html" class="btn btn-stijl">Bekijk mijn ervaring</a>
-                  </div>
-                </div>
-              </div>
-
+      
+            <div class="lc-block">
+              <div class="lc-block">
+                <a class="btn btn-stijl" href="contact.html" role="button">Contacteer mij!</a>
+            </div>
+            
+            </div>
+          </div>
         </div>
-    </div>
-
-
+      </div>
+       
+      
+<!-- Cards -->
+<div class="container min-vh-100 d-flex align-items-center">
+  <div class="row">
+      <div class="col-sm-11 col-md-4 col-lg-4 mb-4">
+          <div class="lc-block">
+              <div class="card shadow-lg p-3 bg-white">
+                  <img class="card-img-top" src="img/home/Homepage1.jpg" alt="Homepage1" loading="lazy">
+                  <div class="card-body text-center">
+                      <h3 class="card-title mb-3 groen">Projecten</h3>
+                      <div class="card-body">
+                        <p class="card-text">Op deze website vind je een overzicht van de projecten die ik reeds realiseerde. Elk project is een uitdaging en ervaring waar ik met veel enthousiasme aan werkte. Ook vind ik het belangrijk om mijn werk steeds op te bouwen met veel zorgvuldigheid en oog voor detail. Tijdens mijn studie leerde ik al om te voldoen aan de wensen van de klant. Zo probeer ik rekening te houden met zowel het technische aspect als de gebruikerservaring. </p>
+                        <a href="projecten.html" class="btn btn-stijl">Bekijk mijn projecten</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- /lc-block -->
+      </div>
+      <!-- /col -->
+      <div class="col-sm-11 col-md-4 col-lg-4 mb-4">
+              <div class="card shadow-lg p-3 bg-white">
+                  <img class="card-img-top" src="img/home/Homepage2.jpg" alt="Homepage2" loading="lazy">
+                  <div class="card-body text-center">
+                      <h3 class="card-title mb-3 groen">Over mij</h3>
+                      <div class="card-body">
+                        <p class="card-text">  Ook naast het programmeren heb ik nog andere interesses zoals het creatief bezig zijn en de liefde voor mijn gezin, hondje en kamerplanten. Ik kan genieten van een lange wandeling in de natuur en daar bovenop haal ik ook graag de natuur in huis doormiddel van planten in mijn interieur. 
+                          Ik ben een echte creatieveling en combineer deze vaardigheid graag met programmeren om zo mooie en unieke projecten te creëren.</p>
+                          <a href="over_mij.html" class="btn btn-stijl">Lees meer over mij</a>
+                      </div>
+                  </div>
+              </div>
+      </div>
+      <!-- /col -->
+      <div class="col-sm-11 col-md-4 col-lg-4 mb-4">
+              <div class="card shadow-lg p-3 bg-white">
+                  <img class="card-img-top" src="img/home/Homepage3.jpg" alt="Homepage3" loading="lazy">
+                  <div class="card-body text-center">
+                      <h3 class="card-title mb-3 groen">Ervaring</h3>
+                      <div class="card-body">
+                        <p class="card-text">Hier komt nog een tekst over mijn werkervaring.</p>
+                        <a href="cv.html" class="btn btn-stijl">Bekijk mijn ervaring</a>
+                      </div>
+                  </div>
+              </div>
+      </div>
+      <!-- /col -->
+  </div>
+</div>
 
 <!-- Footer -->
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -132,5 +153,6 @@
       </footer>
 
       <script src="js/bootstrap.bundle.min.js"></script>
+      <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
 </body>
 </html>
