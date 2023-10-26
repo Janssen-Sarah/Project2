@@ -76,6 +76,11 @@
   border-radius: 25px;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  color: #062825;
+  background-color: #cecece;
+}
+
 /* Hero */
 .hero-img
 { 
@@ -240,3 +245,6 @@
   width: 100%;
   height: max-content;
 }
+
+
+
