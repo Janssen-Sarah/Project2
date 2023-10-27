@@ -1,28 +1,46 @@
+/* Algemeen */
+
+body{
+  background-color: #f8f9fa !important
+}
+
+.break{
+  width: 15px;
+}
+
 .groen {
   color: #0D625E !important;
 }
+
 .bg-groen {
   background-color: #0D625E;
 }
+
 .donkergroen{
   color: #062825;
 }
+
 .bg-donkergroen{
   background-color: #062825;
 }
+
 .bruin{
   color: #8C805C;
 }
+
 .bg-bruin{
   background-color: #8C805C;
 }
+
 .grijs{
   color: #ececec;
 }
+
 .bg-grijs{
   background-color: #ececec;
 }
 
+/* buttons */
 .btn-outline-groen {
   --bs-btn-color: #0D625E;
   --bs-btn-border-color: #0D625E;
@@ -39,19 +57,6 @@
   --bs-btn-disabled-border-color: #0D625E;
   --bs-gradient: none;
 }
-
-.form-control:focus {
-  color: var(--bs-body-color);
-  background-color: var(--bs-body-bg);
-  border-color: #0D625E;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem #cecece;
-}
-
-.footer-icon {
-  max-width: 20px;
-}
-
 .btn-stijl
 {
     --bs-btn-color: #fff;
@@ -69,11 +74,22 @@
     --bs-btn-disabled-bg: #0D625E;
     --bs-btn-disabled-border-color: #0D625E;
 }
-
-
 .btn
 {
   border-radius: 25px;
+}
+
+/* menu en footer */
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #0D625E;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #cecece;
+}
+
+.footer-icon {
+  max-width: 20px;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -81,11 +97,12 @@
   background-color: #cecece;
 }
 
+/* Homepage */
 /* Hero */
 .hero-img
-{ 
-  background-position: center; 
-  background-size:cover; 
+{
+  background-position: center;
+  background-size:cover;
   background-repeat:no-repeat;
 }
 .hero-tekst{
@@ -105,7 +122,7 @@
   font-weight: 400;
 }
 
-
+/* CV pagina */
 /* visitekaartje */
 .badgescard,
 .firstinfo {
@@ -227,7 +244,7 @@
     }
 }
 
-
+/* Over mij pagina */
 /* Slider over mij */
  .slider {
   height: 550px;
@@ -246,6 +263,8 @@
   height: max-content;
 }
 
+
+/* Animaties */
  /* reveal na scroll  (met js) */
 
  .reveal{
@@ -260,17 +279,15 @@
   opacity: 1;
 }
 
-
-
-loading animation
+/* loading animatie */
 .overflow-hidden {
   overflow: hidden;
  }
- 
+
  .drop-in-l {
   animation: drop-in-l 2200ms ease 500ms backwards;
  }
- 
+
  .drop-in-r {
   animation: drop-in-r 2200ms ease 500ms backwards;
  }
@@ -282,7 +299,7 @@ loading animation
  .drop-in-b {
   animation: drop-in-b 2200ms ease 500ms backwards;
  }
- 
+
  @keyframes drop-in-l {
   from {
    opacity: 0;
@@ -315,7 +332,6 @@ loading animation
    transform: translate(0px);
   }
  }
-
 
  @keyframes drop-in-b {
   from {
