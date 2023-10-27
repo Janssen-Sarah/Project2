@@ -33,6 +33,7 @@
                   Projecten
                 </a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="projecten.html">Overzicht</a></li>
                   <li><a class="dropdown-item" href="project_pizza.html">Pizza in SQL</a></li>
                   <li><a class="dropdown-item" href="project_wordpress.html">Project Wordpress</a></li>
                 </ul>
@@ -59,7 +60,7 @@
       <div class="row justify-content-center p-4">
 
 <!-- visitekaart -->
-<div class="cardme mt-5">
+<div class="cardme mt-5 mb-0 w-100">
   <div class="firstinfo me"><img src="img/home/Homepage_portret.jpg" alt="portret" />
       <div class="profileinfo">
           <h1 class="groen">Sarah Janssen</h1>
@@ -69,11 +70,13 @@
   </div>
 </div>
 <!-- einde visitekaart -->
+</div> <!--row -->
 
 
-<!--Carousel hardskills-->
-          <div class="col-md-6 mt-5">
-
+<!-- skills -->
+<div class="row justify-content-center px-3 pt-4">
+          <div class="col-md-6 mt-1 reveal">
+<!--Carousel hard skills-->
               <div class="card shadow-lg p-3 bg-white">
                   <div class="card-body">
                       <h4 class="card-title text-lg-center text-md-center text-sm-center center groen">Hard skills</h4>
@@ -133,11 +136,16 @@
           </div>
           <!-- /col -->
 
-  </div>
-  <!-- /row -->
+
+<!--Card soft skills-->
+<div>
+
+</div>
+
+
+
+</div> <!-- /row -->
 </div><!-- container -->
-
-
 
 <!--Footer-->
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -190,6 +198,7 @@
   $('.stop').on('click',function(){
       owl.trigger('stop.owl.autoplay')
   })</script>
+        <script src="js/scrollanimatie.js"></script>
 
 </body>
 </html>
