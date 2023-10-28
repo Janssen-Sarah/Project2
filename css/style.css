@@ -4,6 +4,19 @@ body{
   background-color: #f8f9fa !important
 }
 
+.link-in-text:link{
+color: #062825;
+text-decoration: none;
+}
+.link-in-text:visited{
+color: #062825;
+text-decoration: none;
+}
+.link-in-text:hover{
+  color: #062825;
+  text-decoration: underline;
+}
+
 .break{
   width: 15px;
 }
@@ -185,8 +198,8 @@ body{
 
 .firstinfo img {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 135px;
+    height: 135px;
 }
 
 .firstinfo .profileinfo {
@@ -205,7 +218,7 @@ body{
 
 .firstinfo .profileinfo p.info {
     padding: 10px 0px;
-    color: #5A5A5A;
+    color: #062825;
     line-height: 1.2;
     font-style: initial;
 }
@@ -343,4 +356,30 @@ body{
    transform: translate(0px);
   }
  }
+
+
+ /* accordion pagina cv */
+ .accordion-button:not(.collapsed) {
+  color: #062825;
+  background-color: #cecece;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #cecece;
+ }
+
+ .accordion-button:not(.collapsed)::after {
+  background-image:  #062825;
+
+}
+
+ .accordion-button:focus {
+  z-index: 3;
+  border-color: #cecece;
+  outline: 0;
+  box-shadow: #cecece;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-border-color: #cecece;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #cecece;
+ --bs-accordion-active-color: var(--bs-primary-text-emphasis);
+}
 
