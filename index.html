@@ -12,12 +12,14 @@
 <body>
   
 <!--nav-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary col-md-12 sticky-lg-top sticky-md-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg  col-md-12 sticky-lg-top sticky-md-top">
+        <div class="container">
           <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap"  height="40"></a>
+          <div class="justify-content-end">
           <button class="navbar-toggler groen" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -46,39 +48,35 @@
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
-              <button class="btn btn-outline-groen" type="submit">Zoeken</button>
-            </form>
           </div>
         </div>
+      </div>
       </nav>
 
 
 <!-- hero -->
       <div class="position-relative overflow-hidden mb-4">
         <div class="d-flex min-vh-100">
-          <video style="z-index:1;object-fit: cover; object-position: 50% 50%;" class="position-absolute w-100 min-vh-100 " autoplay="" preload="" muted="" loop="" playsinline="">
-            <!-- adjust object-position to tweak cropping on mobile -->
-            <source src="videos/herovideo.mp4" type="video/mp4">
+          <video class="position-absolute w-100 min-vh-100 herovideo" autoplay="" preload="" muted="" loop="" playsinline="">
+            <source src="videos/herovideo4.mp4" type="video/mp4">
           </video>
-          <div style="z-index:2" class="align-self-center text-center text-light col-md-8 offset-md-2">
-            <div class="lc-block mb-4">
+          <div style="z-index:2" class="align-self-center text-center text-light col-md-8 offset-md-2 mask2 p-3">
+            <div class="lc-block">
               <div>
-                <h1 class="display-1 fw-bolder">Go for IT!</h1>
+                <h1 class="display-1 fw-bolder groen">Go for IT!</h1>
               </div>
             </div>
       
-            <div class="lc-block m-3">
+            <div class="lc-block mx-3">
               <div>
-                <p class="lead">Mijn naam is Sarah Janssen en ik ben een enthousiaste student Programmeren aan de Thomas More Hogeschool. Ik ben zeer leergierig en hou ervan om mijn vaardigheden en kennis te verbreden. Omdat ik de drang heb om steeds op zoek te gaan naar nieuwe uitdagingen, is IT een perfecte manier om hier aan mijn noden te voldoen. Tijdens maar ook na mijn studie zal ik steeds bereid zijn om nieuwe uitdagingen aan te gaan en mijn kennis te blijven uitbreiden. </p>
+                <p class="lead donkergroen">Mijn naam is Sarah Janssen en ik ben een enthousiaste student Programmeren aan de Thomas More Hogeschool. Ik ben zeer leergierig en hou ervan om mijn vaardigheden en kennis te verbreden. Omdat ik de drang heb om steeds op zoek te gaan naar nieuwe uitdagingen, is IT een perfecte manier om hier aan mijn noden te voldoen. Tijdens maar ook na mijn studie zal ik steeds bereid zijn om nieuwe uitdagingen aan te gaan en mijn kennis te blijven uitbreiden. </p>
       
               </div>
             </div>
       
             <div class="lc-block">
               <div class="lc-block">
-                <a class="btn btn-stijl" href="contact.html" role="button">Contacteer mij!</a>
+                <a class="btn btn-stijl btn-lg" href="contact.html" role="button">Contacteer mij!</a>
             </div>
             
             </div>
@@ -98,7 +96,7 @@
                       <h3 class="card-title mb-3 groen">Projecten</h3>
                       <div class="card-body">
                         <p class="card-text">Op deze website vind je een overzicht van de projecten die ik reeds realiseerde. Elk project is een uitdaging en ervaring waar ik met veel enthousiasme aan werkte. Ook vind ik het belangrijk om mijn werk steeds op te bouwen met veel zorgvuldigheid en oog voor detail. Tijdens mijn studie leerde ik al om te voldoen aan de wensen van de klant. Zo probeer ik rekening te houden met zowel het technische aspect als de gebruikerservaring. </p>
-                        <a href="projecten.html" class="btn btn-stijl">Bekijk mijn projecten</a>
+                        <a href="projecten.html" class="btn btn-stijl card-btn">Bekijk mijn projecten</a>
                       </div>
                   </div>
               </div>
@@ -114,7 +112,7 @@
                       <div class="card-body">
                         <p class="card-text">  Ook naast het programmeren heb ik nog andere interesses zoals het creatief bezig zijn en de liefde voor mijn gezin, hondje en kamerplanten. Ik kan genieten van een lange wandeling in de natuur en daar bovenop haal ik ook graag de natuur in huis doormiddel van planten in mijn interieur. 
                           Ik ben een echte creatieveling en combineer deze vaardigheid graag met programmeren om zo mooie en unieke projecten te creëren.</p>
-                          <a href="over_mij.html" class="btn btn-stijl">Lees meer over mij</a>
+                          <a href="over_mij.html" class="btn btn-stijl card-btn">Lees meer over mij</a>
                       </div>
                   </div>
               </div>
@@ -126,8 +124,8 @@
                   <div class="card-body text-center">
                       <h3 class="card-title mb-3 groen">Ervaring</h3>
                       <div class="card-body">
-                        <p class="card-text">Hier komt nog een tekst over mijn werkervaring.</p>
-                        <a href="cv.html" class="btn btn-stijl">Bekijk mijn ervaring</a>
+                        <p class="card-text">Ben je benieuwd naar mijn opleidingen en werkervaring? Of wil je weten welke skills ik beheer? Op deze pagina vind je mijn curriculum vitae.</p>
+                        <a href="cv.html" class="btn btn-stijl card-btn">Bekijk mijn ervaring</a>
                       </div>
                   </div>
               </div>

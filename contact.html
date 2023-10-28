@@ -11,60 +11,77 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-lg-top sticky-md-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap" height="40"></a>
-          <button class="navbar-toggler groen" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cv.html">CV</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="projecten.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projecten
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="projecten.html">Overzicht</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="project_pizza.html">Pizza in SQL</a></li>
-                  <li><a class="dropdown-item" href="project_wordpress.html">Project Wordpress</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="over_mij.html">Over mij</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-              </li>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary col-md-12 sticky-lg-top sticky-md-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap"  height="40"></a>
+      <div class="justify-content-end">
+      <button class="navbar-toggler groen" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a>
+          </li>
+<!--Dropdown-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projecten
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="projecten.html">Overzicht</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="project_pizza.html">Pizza in SQL</a></li>
+              <li><a class="dropdown-item" href="project_wordpress.html">Project Wordpress</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
-              <button class="btn btn-outline-groen" type="submit">Zoeken</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+          </li>
+<!--nav-->
+          <li class="nav-item">
+            <a class="nav-link" href="over_mij.html">Over mij</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"
+            aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </nav>
 
 <!-- Inleiding -->
-      <div class="bg-light py-3 py-md-5">
-        <div class="container">
-          <div class="row justify-content-md-center">
-            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-              <h3 class="fs-6 mb-5 text-uppercase text-center"><img class="break" src="img/Logo/break.svg" alt="break"></h3>
-              <h2 class=" mb-4 mb-md-5 text-center groen">Wil je meer weten of heb je vragen? Neem dan contact op met mij.</h2>
-              <h3 class="fs-6 mb-5 text-uppercase text-center"><img class="break" src="img/Logo/break.svg" alt="break"></h3>
-              <h3 class="fs-6 mb-5 text-uppercase text-center bruin">Contact</h3>
-            </div>
-          </div>
-        </div>
+<div class="p-5 text-center drop-in-t contactme" style="background-image: url('img/contact/contactafbeelding2.png')">
+  <div class="mask2">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+
+        <h1 class="my-5">
+          <h2 class=" mb-4 mb-md-5 text-center groen">Wil je meer weten of heb je vragen? Neem dan contact op met mij.</h2>
+          </h1>
+
+        <h4><div class="fs-6 my-3 text-uppercase text-center"><a href="mailto:janssen.sarah1991@gmail.com"><img class="img-contact p-2" src="img/contact/email.png" alt="mail"></a><a href="https://github.com/Janssen-Sarah"><img class="img-contact p-2" src="img/contact/github-mark.png" alt="Github"></a><a href="https://www.linkedin.com/in/sarah-janssen-27566a266/"><img class="img-contact p-2" src="img/contact/LI-In-Bug.png" alt="LinkedIn"></a></div>
+
+          <h3 class="fs-6 m-lg-5 m-sm-2 text-uppercase text-center"><img class="break" src="img/Logo/break.svg" alt="break"></h3>
+
+          <a href="#formulier" class="link-formulier"><h3 class="fs-6 text-uppercase text-center groen">contacteer mij</h3>
+          <div class="fs-6 mb-5 text-uppercase text-center">
+            <i class="fa fa-arrow-down fa-beat groen"></i></a>
+          </div></h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
       
 <!-- Formulier-->
+<div class="py-3 py-md-5" id="formulier">
 <div class="container pt-3">
   <div class="row gx-0 mb-lg-0 justify-content-center reveal">
             <div class="col-12 col-lg-6">
@@ -111,7 +128,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-6">
-            <img class="img-fluid rounded" loading="lazy" src="img/contact/contactafbeeling.jpg" alt="Get in Touch">
+            <img class="img-fluid rounded" loading="lazy" src="img/contact/contactafbeelding.jpg" alt="Contact">
             <div ><iframe class="googlemap mt-3 border rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159554.43723302195!2d4.77163469567375!3d51.32881938227303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6b1870f095deb%3A0x40099ab2f4d5dc0!2s2300%20Turnhout!5e0!3m2!1snl!2sbe!4v1697572140201!5m2!1snl!2sbe" width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
           </div>
           </div>
@@ -139,5 +156,6 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scrollanimatie.js"></script>
+    <script src="https://kit.fontawesome.com/4929efc42b.js" crossorigin="anonymous"></script>
 </body>
 </html>
