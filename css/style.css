@@ -74,7 +74,10 @@ text-decoration: none;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #0D625E;
   --bs-gradient: none;
+  width: 200px;
+
 }
+
 .btn-stijl
 {
     --bs-btn-color: #fff;
@@ -319,6 +322,7 @@ text-decoration: none;
   opacity: 1;
 }
 
+
 /* loading animatie */
 .overflow-hidden {
   overflow: hidden;
@@ -431,3 +435,10 @@ text-decoration: none;
  background-position: center;
 }
 
+.img-project{
+  max-width: 150px;
+}
+
+.row >.btn{
+width: 20%;
+}

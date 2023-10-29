@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary col-md-12 sticky-lg-top sticky-md-top">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap"  height="40"></a>
@@ -33,10 +33,10 @@
               Projecten
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="projecten.html">Overzicht</a></li>
+              <li><a class="dropdown-item active"aria-current="page" href="projecten.html">Overzicht</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="project_pizza.html">Pizza in SQL</a></li>
-              <li><a class="dropdown-item active" aria-current="page" href="project_wordpress.html">Project Wordpress</a></li>
+              <li><a class="dropdown-item "  href="project_wordpress.html">Project Wordpress</a></li>
             </ul>
           </li>
 <!--nav-->
@@ -52,31 +52,48 @@
   </div>
   </nav>
 
-
-  <div class="container-fluid pt-3">
-    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center drop-in-t">
-        <div class="col-lg-6">
-            <div class="bg-white text-center h-100 project">
-                <div class="d-flex h-100 ">
-                    <div class="project-text w-100 my-auto text-center text-lg-left">
-                        <h4 class="groen">Kom meer over mij te weten...</h4>
-                        <p class="m-4 donkergroen text-start">Mijn naam is Sarah Janssen. Ik ben een creatieveling met een passie voor IT en technologie. Al van jongs af aan is IT een groot onderdeel van mijn leven. Dankzij mijn studie publiciteit en mijn opleiding tot medisch secretaresse, spendeerde ik al veel tijd achter mijn computer. Sinds mijn vriend in 2021 afstudeerde als IT-er, begon het bij mij ook meer te kriebelen. Het deed me beseffen dat het tijd werd om zelf mijn droom achterna te jagen. Daarom besloot ik begin 2023 om een nieuwe weg in te slaan.
-
-                          Na een mooie carrière als medisch secretaresse bij een expertise-arts, startte ik met een opleiding Programmeren aan de Thomas More Hogeschool. Ik ben vaak zeer perfectionistisch, wat betekent dat ik altijd streef naar de hoogst mogelijke kwaliteit en nauwkeurigheid. Dit leidt vaak tot uitstekende resultaten, maar soms besteed ik te veel tijd aan het perfectioneren van taken. Het voordeel aan mijn perfectionisme is dat ik steeds probeer om het beste resultaat te leveren. Naast het constant streven naar de beste kwaliteit is de drang om steeds bij te leren iets wat mij motiveert om mezelf te blijven ontwikkelen.</p>
-
-                          <h4 class="groen mt-5">Hobby's en interesses</h4>
-                        <p class="m-4 donkergroen text-start">Naast de tijd die ik doorbreng achter mijn laptop, heb ik ook nog andere hobby's. Zo heb ik veel liefde voor mijn hondje en breng ik veel tijd door met hem. Ook ben ik een gepassioneerde verzamelaar en verzorger van kamerplanten. In het verleden had ik er een grote collectie van. Omdat er tegenwoordig ook heel wat andere uitdagingen op mijn pad liggen, heb ik mijn plantenverzameling wat teruggeschroefd.
-                          Omdat ik een liefhebber ben van de natuur vind ik het fantastisch om buiten te zijn. Ik geniet van al het moois dat de omgeving te bieden heeft. Samen met mijn hondje ga ik er vaak op uit voor lange wandelingen. We proberen wekelijks grote tochten af te leggen. Dit is voor mij de ultieme manier om even te ontsnappen aan de dagelijkse drukte en tot rust te komen.
-                          </p>
-                    </div>
-                    </div>
-                </div>
+<!-- cards projecten -->
+  <div class="container">
+    <div class="row text-center groen drop-in-t">
+      <h2>Projecten</h2>
+    </div>
+    <div class="row text-center m-5 donkergroen drop-in-t">
+      <p>Als student programmeren heb ik al verschillende projecten afgerond, waarvan ik er een aantal graag met u wil delen. Op deze pagina vindt u een overzicht van de projecten die ik maakte of waar ik aan meewerkte. Door op een project te klikken kan je elk project afzonderlijk bekijken en meer gedetailleerde informatie vinden over de gebruikte programmeertalen en -technologieën. Wil je graag meer weten over een bepaald project? Aarzel dan niet om contact met mij op te nemen.</p>
+    </div>
+    <div class="row">
+ <!-- project 1 -->
+      <div class="col-sm-11 col-md-3 col-lg-4 mb-4 reveal">
+    <div class="card shadow-lg p-3 bg-white align-items-center">
+        <a href="project_pizza.html"><img class="card-img-top img-project rounded" src="img/projecten/pizza_project.png" alt="Pizza" loading="lazy"></a>
+        <div class="card-body text-center">
+            <h3 class="card-title mb-3 groen">Pizza in SQL</h3>
+            <div class="card-body align-items-center">
+              <p class="card-text">Dit project omvatte de vertaling van een bestaand ERD-schema naar een SQL-database voor een fictief pizzabedrijf. Het omvatte het aanmaken van tabellen, datatype-specificaties, FK/PK-constraints, en het toevoegen van records met behulp van SQL Server Management Studio.</p>
+                <a href="project_pizza.html" class="btn btn-outline-groen card-btn">Lees meer</a>
             </div>
-            <div class="col-lg-6"><img class="img-fluid rounded" src="img/over_mij/overmij_plant2.jpg" alt="plant1"></div>
         </div>
     </div>
+</div>
 
-  
+ <!-- project 2 -->
+<div class="col-sm-11 col-md-3 col-lg-4 mb-4 reveal">
+    <div class="card shadow-lg p-3 bg-white align-items-center">
+        <a href="project_wordpress.html"><img class="card-img-top img-project rounded" src="img/projecten/wordpress_project.png" alt="Wordpress" loading="lazy"></a>
+        <div class="card-body text-center">
+            <h3 class="card-title mb-3 groen">Wordpress</h3>
+            <div class="card-body align-items-center">
+              <p class="card-text"> 
+                Voor een groepsproject in mijn opleiding hebben we een WordPress-website voor een bedrijf gebouwd, met zowel back-end als front-end ontwikkeling. Elementor, een handige pagebuilder-plugin, maakte het eenvoudig om pagina's te maken. Dit was mijn introductie tot WordPress en webdesign, een waardevolle leerervaring. </p>
+              <a href="project_wordpress.html" class="btn btn-outline-groen card-btn">Lees meer</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>  <!--container-->
+
+
+<a href="projecten.html"><div class="fs-6 mb-5 pt-3 text-center">
+  <i class="fa fa-arrow-up groen"></i></a>
 
   <!-- footer -->
   <footer class="d-flex flex-wrap justify-content-start align-items-center py-3 my-4 border-top">
@@ -99,6 +116,7 @@
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/scrollanimatie.js"></script>
+<script src="https://kit.fontawesome.com/4929efc42b.js"></script>
 
 </body>
 </html>
