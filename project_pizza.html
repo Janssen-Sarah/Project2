@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,47 +10,62 @@
 
 </head>
 <body>
-    
-  <nav class="navbar navbar-expand-lg bg-body-tertiary col-md-12 sticky-lg-top sticky-md-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap"  height="40"></a>
-      <div class="justify-content-end">
-      <button class="navbar-toggler groen" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  
+<!-- navbar -->
+<!-- Logo klein scherm -->
+<nav class="navbar flex-wrap py-4 px-4 px-md-10 navbar-expand-lg  bg-body-tertiary shadow-lg sticky-lg-top sticky-md-top">
+  <div class="container-fluid">
+      <a class="d-md-none navbar-brand" href="index.html">
+          <img src="img/Logo/LogoSJ_geenachtergrond.png" height="48" class="d-inline-block align-text-top me-2" alt="">
+      </a>
+<!-- toggler -->
+      <button class="d-lg-none ms-auto btn bg-light p-0 d-flex justify-content-center align-items-center rounded-circle" style="width: 50px; height: 50px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_LC_logocenter" aria-controls="navbar_LC_logocenter" aria-expanded="false" aria-label="Toggle navigation">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+          </svg>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cv.html">CV</a>
-          </li>
-<!--Dropdown-->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projecten
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="projecten.html">Overzicht</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item active"  aria-current="page" href="project_pizza.html">Pizza in SQL</a></li>
-              <li><a class="dropdown-item" href="project_wordpress.html">Project Wordpress</a></li>
-            </ul>
-          </li>
-<!--nav-->
-          <li class="nav-item">
-            <a class="nav-link" href="over_mij.html">Over mij</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+<!-- logo groot scherm -->
+      <div class="d-none d-md-block position-absolute top-50 start-50 translate-middle">
+          <a class="navbar-brand" href="index.html">
+              <img src="img/Logo/LogoSJ_geenachtergrond.png"  height="48" class="d-inline-block align-text-top me-2" alt="">
+          </a>
       </div>
-    </div>
+<!-- Menu groot scherm -->
+      <div class="collapse navbar-collapse" id="navbar_LC_logocenter">
+          <div class="live-shortcode me-auto text-end"> 
+              <!--  nav_menu -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                  </li>
+      <!--Dropdown-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projecten
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="projecten.html">Overzicht</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item active" aria-current="page" href="project_pizza.html">Pizza in SQL</a></li>
+                      <li><a class="dropdown-item" href="project_wordpress.html">Project Wordpress</a></li>
+                    </ul>
+                  </li>
+      <!--nav-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="over_mij.html">Over mij</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+      <!-- /nav_menu -->
+          </div>
+      </div>
   </div>
-  </nav>
+</nav>
 
 
 <!-- section -->
@@ -90,37 +105,60 @@
     </div>
     </div>
     <div class="col-sm-12 col-lg-6 col-md-6 my-auto">
-      <img class="img-fluid rounded h-100" src="img/projecten/SQL_project.png" alt="SQL"></div>
-
-    
+      <img class="img-fluid rounded h-100" src="img/projecten/SQL_project.png" alt="SQL">
+    </div>
     </div> 
-
   </div>
 
-  <a href="projecten.html" class="link-formulier"><p class="text-center groen">Terug naar overzicht</p>
-    <div class="fs-6 mb-5 text-center"></a>
+
+<!-- Terug naar overzicht -->
+    <div class="fs-6 mb-5 text-center">  <a href="projecten.html" class="link-formulier"><p class="text-center groen">Terug naar overzicht</p>
+</a></div>
 
 
-      <a href="project_pizza.html"><div class="fs-6 mb-5 pt-3">
-          <i class="fa fa-arrow-up groen"></i></a>
-  
-
-<footer class="d-flex flex-wrap justify-content-start align-items-center py-3 my-4 border-top">
-  <div class="col-md-4 d-flex align-items-center">
-    <div class="ms-2 me-2 mb-md-0 text-muted text-decoration-none lh-1"></div>
-    <span class="text-muted">&copy; 2023 - Sarah Janssen</span>
+ <!-- BTT -->
+<div class="text-center pt-3">
+  <a href="project_pizza.html" class="fs-6 mb-5 d-lg-none d-md-none groen">
+    <i class="fa fa-arrow-up"></i></a>
   </div>
-  <ul class="nav col-md-4 justify-content-center d-flex">
-    <li class="ms-3">
-      <a class="text-muted" href="mailto:janssen.sarah1991@gmail.com"  target="_blank"><img class="footer-icon" src="img/contact/email.png" alt="email" title="mail"></a>
-    </li>
-    <li class="ms-3">
-      <a class="text-muted" href="https://github.com/Janssen-Sarah"  target="_blank"><img class="footer-icon" src="img/contact/github-mark.png" alt="github" title="github"></a>
-    </li>
-    <li class="ms-3 me-3">
-      <a class="text-muted" href="https://www.linkedin.com/in/sarah-janssen-27566a266/"  target="_blank"><img class="footer-icon" src="img/contact/LI-In-Bug.png" alt="linkedin" title="linkedin"></a>
-    </li>
-  </ul>
+
+<!-- Footer -->
+<footer>
+  <div class="container py-6">
+      <div class="lc-block d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4">
+              <div>
+                  <p class="text-muted">&copy; 2023 - Sarah Janssen</p>
+              </div>
+          </div>
+  <!-- logo -->
+          <div class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto col-md-4 d-none d-md-block">
+              <div class="text-center">
+                  <a class="navbar-brand" href="index.html">
+                      <img  src="img/Logo/Favicon.png" alt="SJ"  height="48">
+                  </a>
+              </div>
+          </div>
+          <div class="col-md-4 navbar-expand">
+              <div> 
+  <!--  links -->
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0 flex-wrap justify-content-center">
+                      <li class="ms-3">
+                          <a class="text-muted" href="mailto:janssen.sarah1991@gmail.com"  target="_blank"><img class="footer-icon" src="img/contact/email.png" alt="email" title="mail"></a>
+                        </li>
+                        <li class="ms-3">
+                          <a class="text-muted" href="https://github.com/Janssen-Sarah"  target="_blank"><img class="footer-icon" src="img/contact/github-mark.png" alt="github" title="github"></a>
+                        </li>
+                        <li class="ms-3 me-3">
+                          <a class="text-muted" href="https://www.linkedin.com/in/sarah-janssen-27566a266/"  target="_blank"><img class="footer-icon" src="img/contact/LI-In-Bug.png" alt="linkedin" title="linkedin"></a>
+                        </li>
+
+                  </ul> 
+  <!-- /links -->
+              </div>
+          </div>
+      </div>
+  </div>
 </footer>
 
       <script src="js/bootstrap.bundle.min.js"></script>

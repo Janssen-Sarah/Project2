@@ -14,47 +14,60 @@
 </head>
 
    <!--nav--> 
-   <nav class="navbar navbar-expand-lg bg-body-tertiary col-md-12 sticky-lg-top sticky-md-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img class="col-12" src="img/Logo/LogoSJ_geenachtergrond.png" alt="Bootstrap"  height="40"></a>
-      <div class="justify-content-end">
-      <button class="navbar-toggler groen" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<!-- Logo klein scherm -->
+<nav class="navbar flex-wrap py-4 px-4 px-md-10 navbar-expand-lg  bg-body-tertiary shadow-lg sticky-lg-top sticky-md-top">
+  <div class="container-fluid">
+      <a class="d-md-none navbar-brand" href="index.html">
+          <img src="img/Logo/LogoSJ_geenachtergrond.png" height="48" class="d-inline-block align-text-top me-2" alt="">
+      </a>
+<!-- toggler -->
+      <button class="d-lg-none ms-auto btn bg-light p-0 d-flex justify-content-center align-items-center rounded-circle" style="width: 50px; height: 50px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_LC_logocenter" aria-controls="navbar_LC_logocenter" aria-expanded="false" aria-label="Toggle navigation">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+          </svg>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link"  href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="cv.html">CV</a>
-          </li>
-<!--Dropdown-->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projecten
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="projecten.html">Overzicht</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="project_pizza.html">Pizza in SQL</a></li>
-              <li><a class="dropdown-item" href="project_wordpress.html">Project Wordpress</a></li>
-            </ul>
-          </li>
-<!--nav-->
-          <li class="nav-item">
-            <a class="nav-link" href="over_mij.html">Over mij</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+<!-- logo groot scherm -->
+      <div class="d-none d-md-block position-absolute top-50 start-50 translate-middle">
+          <a class="navbar-brand" href="index.html">
+              <img src="img/Logo/LogoSJ_geenachtergrond.png"  height="48" class="d-inline-block align-text-top me-2" alt="">
+          </a>
       </div>
-    </div>
+<!-- Menu groot scherm -->
+      <div class="collapse navbar-collapse" id="navbar_LC_logocenter">
+          <div class="live-shortcode me-auto text-end"> 
+              <!--  nav_menu -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="cv.html">CV</a>
+                  </li>
+      <!--Dropdown-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projecten
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="projecten.html">Overzicht</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="project_pizza.html">Pizza in SQL</a></li>
+                      <li><a class="dropdown-item" href="project_wordpress.html">Project Wordpress</a></li>
+                    </ul>
+                  </li>
+      <!--nav-->
+                  <li class="nav-item">
+                    <a class="nav-link" href="over_mij.html">Over mij</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+      <!-- /nav_menu -->
+          </div>
+      </div>
   </div>
-  </nav>
-
+</nav>
 <!--nav-->
 
 
@@ -64,7 +77,7 @@
 
 <!-- visitekaart -->
 <div class="cardme mt-5 mb-0 w-100 drop-in-t">
-  <div class="firstinfo me"><img src="img/cv/portret.jpg" alt="portret" />
+  <div class="firstinfo me"><img src="img/cv/portret.jpg" alt="portret">
       <div class="profileinfo">
           <h1 class="groen">Sarah Janssen</h1>
           <h3>Developer</h3>
@@ -86,56 +99,56 @@
 
                    
                         <div class="card shadow-lg p-3 bg-white">
-                          <img class="card-img-top" src="img/cv/csharp.png" alt="csharp" />
+                          <img class="card-img-top" src="img/cv/csharp.png" alt="csharp">
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">C#</h5>
                           </div>
                         </div>
 
                         <div class="card shadow-lg p-3 bg-white">
-                          <img class="card-img-top" src="img/cv/css.png" alt="css" />
+                          <img class="card-img-top" src="img/cv/css.png" alt="css">
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">CSS</h5>
                           </div>
                         </div>
 
                         <div class="card shadow-lg p-3 bg-white">
-                          <img class="card-img-top" src="img/cv/github-mark.png" alt="github" />
+                          <img class="card-img-top" src="img/cv/github-mark.png" alt="github">
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">GitHub</h5>
                           </div>
                         </div>
 
                         <div class="card shadow-lg p-3 bg-white">
-                          <img class="card-img-top" src="img/cv/bootstrap.png" alt="bootstrap" />
+                          <img class="card-img-top" src="img/cv/bootstrap.png" alt="bootstrap">
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">Bootstrap</h5>
                           </div>
                         </div>
 
                         <div class="card shadow-lg p-3 bg-white">
-                          <img class="card-img-top" src="img/cv/html.png" alt="html" />
+                          <img class="card-img-top" src="img/cv/html.png" alt="html">
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">HTML</h5>
                           </div>
                         </div>
 
                         <div class="card shadow-lg p-3 bg-white">
-                          <img class="card-img-top" src="img/cv/linux.png" alt="linux" />
+                          <img class="card-img-top" src="img/cv/linux.png" alt="linux">
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">Linux</h5>
                           </div>
                         </div>
 
                         <div class="card shadow-lg  bg-white">
-                          <img class="card-img-top p-3 pb-0" src="img/cv/javascript.png" alt="JavaScript" />
+                          <img class="card-img-top p-3 pb-0" src="img/cv/javascript.png" alt="JavaScript">
                           <div class="card-body">
                             <h5 class="card-title text-center bruin pb-3">JavaScript</h5>
                           </div>
                         </div>
 
                         <div class="card shadow-lg p-3 bg-white">
-                          <img class="card-img-top" src="img/cv/sql.png" alt="sql" />
+                          <img class="card-img-top" src="img/cv/sql.png" alt="sql">
                           <div class="card-body">
                             <h5 class="card-title text-center bruin">SQL</h5>
                           </div>
@@ -219,27 +232,50 @@
 </div> <!-- /row -->
 </div><!-- container -->
 
-
-<a href="cv.html"><div class="fs-6 mb-5 pt-3  text-center">
-  <i class="fa fa-arrow-up groen"></i></a>
-
-<!--Footer-->
-<footer class="d-flex flex-wrap justify-content-start align-items-center py-3 my-4 border-top">
-  <div class="col-md-4 d-flex align-items-center">
-    <div class="ms-2 me-2 mb-md-0 text-muted text-decoration-none lh-1"></div>
-    <span class="text-muted">&copy; 2023 - Sarah Janssen</span>
+<!-- BBT -->
+<div class="text-center pt-3">
+  <a href="cv.html" class="fs-6 mb-5  d-lg-none d-md-none groen">
+    <i class="fa fa-arrow-up"></i></a>
   </div>
-  <ul class="nav col-md-4 justify-content-center d-flex">
-    <li class="ms-3">
-      <a class="text-muted" href="mailto:janssen.sarah1991@gmail.com"  target="_blank"><img class="footer-icon" src="img/contact/email.png" alt="email" title="mail"></a>
-    </li>
-    <li class="ms-3">
-      <a class="text-muted" href="https://github.com/Janssen-Sarah"  target="_blank"><img class="footer-icon" src="img/contact/github-mark.png" alt="github" title="github"></a>
-    </li>
-    <li class="ms-3 me-3">
-      <a class="text-muted" href="https://www.linkedin.com/in/sarah-janssen-27566a266/"  target="_blank"><img class="footer-icon" src="img/contact/LI-In-Bug.png" alt="linkedin" title="linkedin"></a>
-    </li>
-  </ul>
+
+
+<!-- Footer -->
+  <footer>
+    <div class="container py-6">
+        <div class="lc-block d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4">
+                <div>
+                    <p class="text-muted">&copy; 2023 - Sarah Janssen</p>
+                </div>
+            </div>
+    <!-- logo -->
+            <div class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto col-md-4 d-none d-md-block">
+                <div class="text-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img  src="img/Logo/Favicon.png" alt="SJ"  height="48">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 navbar-expand">
+                <div> 
+    <!--  links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 flex-wrap justify-content-center">
+                        <li class="ms-3">
+                            <a class="text-muted" href="mailto:janssen.sarah1991@gmail.com"  target="_blank"><img class="footer-icon" src="img/contact/email.png" alt="email" title="mail"></a>
+                          </li>
+                          <li class="ms-3">
+                            <a class="text-muted" href="https://github.com/Janssen-Sarah"  target="_blank"><img class="footer-icon" src="img/contact/github-mark.png" alt="github" title="github"></a>
+                          </li>
+                          <li class="ms-3 me-3">
+                            <a class="text-muted" href="https://www.linkedin.com/in/sarah-janssen-27566a266/"  target="_blank"><img class="footer-icon" src="img/contact/LI-In-Bug.png" alt="linkedin" title="linkedin"></a>
+                          </li>
+
+                    </ul> 
+    <!-- /links -->
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <script src="js/bootstrap.bundle.min.js"></script>
