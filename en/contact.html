@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contactpagina met contactformulier en info links naar sociale media">
+    <meta name="author" content="Sarah Janssen">
+    <title>Portfolio Sarah Janssen</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/Logo/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- Logo klein scherm -->
+<nav class="navbar flex-wrap py-3 px-4 px-md-10 navbar-expand-lg  bg-body-tertiary shadow-lg sticky-lg-top sticky-md-top">
+  <div class="container-fluid">
+      <a class="d-md-none navbar-brand" href="index.html">
+          <img src="../img/Logo/LogoSJ_geenachtergrond.png" height="48" class="d-inline-block align-text-top me-2" alt="">
+      </a>
+<!-- toggler -->
+      <button class="d-lg-none ms-auto btn bg-light p-0 d-flex justify-content-center align-items-center rounded-circle" style="width: 50px; height: 50px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_LC_logocenter" aria-controls="navbar_LC_logocenter" aria-expanded="false" aria-label="Toggle navigation">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+          </svg>
+      </button>
+<!-- logo groot scherm -->
+      <div class="d-none d-md-block position-absolute top-50 start-50 translate-middle">
+          <a class="navbar-brand" href="index.html">
+              <img src="../img/Logo/LogoSJ_geenachtergrond.png" height="48" class="d-inline-block align-text-top me-2" alt="">
+          </a>
+      </div>
+<!-- Menu groot scherm -->
+      <div class="collapse navbar-collapse" id="navbar_LC_logocenter">
+          <div class="live-shortcode me-auto text-end">
+              <!--  nav_menu -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cv.html" >CV</a>
+                  </li>
+                  <!--Dropdown-->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle dropdown-toggle-split" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Projects
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="projecten.html" >Overview</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="project_pizza.html">Pizza in SQL</a></li>
+                          <li><a class="dropdown-item" href="project_wordpress.html">Project WordPress</a></li>
+                          <li><a class="dropdown-item" href="project_portfolio.html">Portfolio in HTML/CSS</a></li>
+                      </ul>
+                  </li>
+                  <!--nav-->
+                  <li class="nav-item">
+                      <a class="nav-link" href="over_mij.html" >About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+              <!-- /nav_menu -->
+          </div>
+      </div>
+
+
+      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              EN
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('nl')">NL</a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">EN</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+<!-- Inleiding -->
+<div class="p-5 text-center drop-in-t contactme" style="background-image: url('../img/contact/contactafbeelding2.jpg')">
+  <div class="mask2 p-5">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div>
+        <div class="my-5 pb-lg-5 pb-md-5 pb-sm-2">
+          <h2 class="mx-2 mb-4 mb-md-5 text-center groen">Want to know more or have questions? If so, please contact me.</h2>
+          </div>
+
+        <div class="fs-6 my-3 text-uppercase text-center"><a href="mailto:janssen.sarah1991@gmail.com"><img class="img-contact p-2  " src="../img/contact/email.png" alt="mail"></a><a href="https://github.com/Janssen-Sarah"><img class="img-contact p-2" src="../img/contact/github-mark.png" alt="Github"></a><a href="https://www.linkedin.com/in/sarah-janssen-27566a266/"><img class="img-contact p-2" src="../img/contact/LI-In-Bug.png" alt="LinkedIn"></a>
+
+          <div class="fs-6 p-5 text-uppercase text-center"><img class="break" src="../img/Logo/break.svg" alt="break"></div>
+
+        <div>
+          <a href="#formulier" class="link-formulier"><h3 class="fs-6 text-uppercase text-center groen">Contact me</h3></a>
+          <div class="text-center pt-3">
+            <a href="#formulier" class="fs-6 groen">
+              <i class="fa fa-arrow-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Formulier-->
+<div class="container pt-3" id="formulier">
+    <div class="row gx-0 mb-lg-0 justify-content-center reveal">
+        <div class="col-12 col-lg-6">
+            <div class="row justify-content-xl-center">
+                <div class="col-12 col-xl-11">
+                    <div class="bg-white border rounded shadow-sm overflow-hidden mb-3">
+
+                        <form method="post" action="https://tm-statweb.be/forms.php">
+                            <div class="row p-4">
+                                <div class="col-12 pt-3">
+                                    <label for="fullname" class="form-label">Name and first name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+                                </div>
+                                <div class="col-12 pt-3">
+                                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" id="email" name="email" value="" required>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <label for="onderwerp" class="form-label">Interested in:</label>
+                                        <select class="input-group bg-white border rounded overflow-hidden p-2" name="onderwerp" id="onderwerp">
+                                            <option selected>Select an interest</option>
+                                            <option value="HTML / CSS">HTML / CSS</option>
+                                            <option value="JavaScript">JavaScript</option>
+                                            <option value="C#">C#</option>
+                                            <option value="SQL">SQL</option>
+                                            <option value="Linux">Linux</option>
+                                            <option value="Andere">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" name="message" rows="4" ></textarea>
+                                    </div>
+                                    <div class="col-12 pt-4">
+                                        <div class="d-grid p-4">
+                                            <button class="btn btn-stijl btn-lg" type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google maps -->
+        <div class="col-12 col-lg-6">
+            <img class="img-fluid rounded" loading="lazy" src="../img/contact/contactafbeelding.jpg" alt="Contact">
+            <div ><iframe class="googlemap mt-3 border rounded col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.6518893810216!2d4.926576075906937!3d51.31752852455729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6b22537cf80f7%3A0xe2692963687ae16!2sThomas%20More%20-%20Campus%20Turnhout!5e0!3m2!1snl!2sbe!4v1698506011087!5m2!1snl!2sbe"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<!-- BTT -->
+<div class="text-center pt-3 mb-3">
+    <a href="contact.html" class="fs-6 d-lg-none d-md-none groen">
+        <i class="fa fa-arrow-up"></i></a>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <!-- copyright -->
+        <div class="lc-block d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <p class="text-muted">&copy; 2023 - Sarah Janssen</p>
+                </div>
+            </div>
+            <!-- logo -->
+            <div class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto col-md-4 d-none d-md-block">
+                <div class="text-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../img/Logo/Favicon.png" alt="SJ" height="48">
+                    </a>
+                </div>
+            </div>
+            <!--  links -->
+            <div class="col-md-4 navbar-expand">
+                <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 flex-wrap justify-content-center">
+                        <li class="ms-3">
+                            <a class="text-muted" href="mailto:janssen.sarah1991@gmail.com"  target="_blank"><img class="footer-icon" src="../img/contact/email.png" alt="email" title="mail"></a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" href="https://github.com/Janssen-Sarah"  target="_blank"><img class="footer-icon" src="../img/contact/github-mark.png" alt="github" title="github"></a>
+                        </li>
+                        <li class="ms-3 me-3">
+                            <a class="text-muted" href="https://www.linkedin.com/in/sarah-janssen-27566a266/"  target="_blank"><img class="footer-icon" src="../img/contact/LI-In-Bug.png" alt="linkedin" title="linkedin"></a>
+                        </li>
+
+                    </ul>
+                    <!-- /links -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/translations.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/scrollanimatie.js"></script>
+<script src="https://kit.fontawesome.com/4929efc42b.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="informatie over groepsproject in Wordpress voor het aanmaken van een website voor een bestaande klant">
+    <meta name="author" content="Sarah Janssen">
+    <title>Portfolio Sarah Janssen</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/Logo/favicon.ico">
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- Logo klein scherm -->
+<nav class="navbar flex-wrap py-3 px-4 px-md-10 navbar-expand-lg  bg-body-tertiary shadow-lg sticky-lg-top sticky-md-top">
+    <div class="container-fluid">
+        <a class="d-md-none navbar-brand" href="index.html">
+            <img src="../img/Logo/LogoSJ_geenachtergrond.png" height="48" class="d-inline-block align-text-top me-2" alt="">
+        </a>
+        <!-- toggler -->
+        <button class="d-lg-none ms-auto btn bg-light p-0 d-flex justify-content-center align-items-center rounded-circle" style="width: 50px; height: 50px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_LC_logocenter" aria-controls="navbar_LC_logocenter" aria-expanded="false" aria-label="Toggle navigation">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+            </svg>
+        </button>
+        <!-- logo groot scherm -->
+        <div class="d-none d-md-block position-absolute top-50 start-50 translate-middle">
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/Logo/LogoSJ_geenachtergrond.png" height="48" class="d-inline-block align-text-top me-2" alt="">
+            </a>
+        </div>
+        <!-- Menu groot scherm -->
+        <div class="collapse navbar-collapse" id="navbar_LC_logocenter">
+            <div class="live-shortcode me-auto text-end">
+                <!--  nav_menu -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html" >CV</a>
+                    </li>
+                    <!--Dropdown-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split  active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="projecten.html" >Overview</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="project_pizza.html">Pizza in SQL</a></li>
+                            <li><a class="dropdown-item active" href="project_wordpress.html">Project WordPress</a></li>
+                            <li><a class="dropdown-item" href="project_portfolio.html">Portfolio in HTML/CSS</a></li>
+                        </ul>
+                    </li>
+                    <!--nav-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="over_mij.html" >About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- /nav_menu -->
+            </div>
+        </div>
+
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                EN
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('nl')">NL</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">EN</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- section -->
+<div class="container mb-3">
+    <div class="row bg-white gx-0 mb-lg-0 p-3 justify-content-center rounded drop-in-t">
+        <div>
+            <h1 class="groen my-5 text-center">Group project in WordPress</h1>
+        </div>
+        <div class="col-sm-12 col-lg-6 col-md-6">
+            <div class="bg-white rounded ">
+                <div class="d-flex">
+                    <div class="w-100">
+
+                        <h4 class="bruin fst-italic mb-3 ms-4">Building a website</h4>
+                        <p class="m-4 donkergroen text-start">As part of the course, I worked on a group project. We made a website for a real company in a group of 4 people. The intention was to build this website in Wordpress, in order to become familiar with this method. Both the back-end and front-end were completely created by us. Several pages were created with their own purpose. There was a homepage and a contact page, as well as a page to keep track of events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 "><img class="img-fluid rounded" src="../img/projecten/Wordpress.png" alt="wordpress"></div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row bg-white gx-0 mb-5 mt-0 p-3 justify-content-center rounded reveal">
+
+        <div class="col-sm-12 col-lg-6 col-md-6">
+            <div class="bg-white h-100 rounded">
+                <div class="d-flex h-100 ">
+                    <div class="w-100 my-auto ">
+
+                        <h4 class="bruin fst-italic mt-5 mb-3 ms-4">Working with Elementor</h4>
+                        <p class="m-4 donkergroen text-start">To build the website, we used the plugin Elementor. This pagebuilder makes it possible to easily create elements in Wordpress. One can immediately see visually what a page will look like and adjustments are possible with a few clicks. It is also easy to ensure nice responsiveness on pages. This project was my first introduction to Wordpress and website design. I learned a lot about the different aspects involved in building a website. So it was a very nice project to work on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-6 col-md-6 my-auto">
+            <img class="img-fluid rounded h-100" src="../img/projecten/Elementor.png" alt="Elementor"></div>
+
+
+    </div>
+</div>
+
+
+
+<!-- Terug naar overzicht -->
+<div class="fs-6 mb-5 text-center">  <a href="projecten.html" class="link-formulier"><p class="text-center groen">Back to overview</p>
+</a></div>
+
+<!-- BTT -->
+<div class="text-center pt-3 mb-3">
+    <a href="project_wordpress.html" class="fs-6 d-lg-none d-md-none groen">
+        <i class="fa fa-arrow-up"></i></a>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <!-- copyright -->
+        <div class="lc-block d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <p class="text-muted">&copy; 2023 - Sarah Janssen</p>
+                </div>
+            </div>
+            <!-- logo -->
+            <div class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto col-md-4 d-none d-md-block">
+                <div class="text-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../img/Logo/Favicon.png" alt="SJ" height="48">
+                    </a>
+                </div>
+            </div>
+            <!--  links -->
+            <div class="col-md-4 navbar-expand">
+                <div>
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 flex-wrap justify-content-center">
+                        <li class="ms-3">
+                            <a class="text-muted" href="mailto:janssen.sarah1991@gmail.com"  target="_blank"><img class="footer-icon" src="../img/contact/email.png" alt="email" title="mail"></a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" href="https://github.com/Janssen-Sarah"  target="_blank"><img class="footer-icon" src="../img/contact/github-mark.png" alt="github" title="github"></a>
+                        </li>
+                        <li class="ms-3 me-3">
+                            <a class="text-muted" href="https://www.linkedin.com/in/sarah-janssen-27566a266/"  target="_blank"><img class="footer-icon" src="../img/contact/LI-In-Bug.png" alt="linkedin" title="linkedin"></a>
+                        </li>
+
+                    </ul>
+                    <!-- /links -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/translations.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/scrollanimatie.js"></script>
+<script src="https://kit.fontawesome.com/4929efc42b.js"></script>
+</body>
+</html>
